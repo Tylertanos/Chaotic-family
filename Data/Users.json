@@ -1,5 +1,5 @@
 {
-  "": {
+  "Admin": {
     "password": "$2a$12$1Z1m7qG6y2m5g8U7yOzgEugpX9d5Xn2ZgYqXw/5jVv6QPlXQyKkQe",
     "role": "admin",
     "permissions": {
@@ -10,15 +10,25 @@
       "add_users": true
     }
   },
-  "tyler": {
-    "password": "$2a$12$K9x8J3tGQ6x4e2yW1fUuQeR7fA9hM1z3YvT0jP4kH6dL7nR8sJpQe",
-    "role": "user",
+  "Tyler": {
+    "password": "050413tyler",
+    "role": "Admin",
     "permissions": {
       "chat": true,
       "upload": false,
       "delete_messages": false,
       "delete_files": false,
       "add_users": false
+    },
+
+  "Tyler": {
+   "password": "$2a$12$K9x8J3tGQ6x4e2yW1fUuQeR7fA9hM1z3YvT0jP4kH6dL7nR8sJpQe",
+   "role": "Admin",
+   "permissions": {
+     "chat": true,
+     "upload": false,
+     "delete_messages": false,
+     "delete_files": false,
+     "add_users": false
     }
-  }
 }
