@@ -1,0 +1,24 @@
+{
+  "": {
+    "password": "$2a$12$1Z1m7qG6y2m5g8U7yOzgEugpX9d5Xn2ZgYqXw/5jVv6QPlXQyKkQe",
+    "role": "admin",
+    "permissions": {
+      "chat": true,
+      "upload": true,
+      "delete_messages": true,
+      "delete_files": true,
+      "add_users": true
+    }
+  },
+  "tyler": {
+    "password": "$2a$12$K9x8J3tGQ6x4e2yW1fUuQeR7fA9hM1z3YvT0jP4kH6dL7nR8sJpQe",
+    "role": "user",
+    "permissions": {
+      "chat": true,
+      "upload": false,
+      "delete_messages": false,
+      "delete_files": false,
+      "add_users": false
+    }
+  }
+}
