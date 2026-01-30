@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chaotic Family Login</title>
+<style>
+body { background: black; color: green; font-family: monospace; display:flex; justify-content:center; align-items:center; height:100vh; }
+input, button { background: #000; color: green; border: 1px solid green; padding: 5px; margin:5px; }
+</style>
+</head>
+<body>
+<div>
+  <h2>Login</h2>
+  <input id="username" placeholder="Username"><br>
+  <input id="password" type="password" placeholder="Password"><br>
+  <button onclick="login()">Login</button>
+</div>
+<script>
+async function login() {
+  const res = await fetch("/login", {
+    method: "POST",
+    headers: { "Content-Type":"application/json" },
+    body: JSON.stringify({username: document.getElementById("username").value, password: document.getElementById("password").value})
+  });
+  const data = await res.json();
+  if(data.token){
+    localStorage.setItem("token", data.token);
+    window.location.href = "chat.html";
+  } else {
+    alert(data.error);
+  }
+}
+</script>
+</body>
+</html>
